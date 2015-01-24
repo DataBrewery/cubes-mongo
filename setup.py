@@ -1,8 +1,12 @@
 from setuptools import setup, find_packages
 
+requirements = ["pytz"]
+
 setup(
     name = "cubes-mongo",
     version = '0.1',
+
+    install_requires = requirements,
 
     packages = find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     package_data = {
