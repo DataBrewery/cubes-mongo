@@ -1,9 +1,12 @@
+# -*-coding=utf -*-
+
+from __future__ import absolute_import
+
 from dateutil.relativedelta import relativedelta
 from datetime import datetime, timedelta
 from dateutil.tz import *
 
 from functools import partial
-import pytz
 
 
 DATE_PARTS = ['year', 'month', 'day']

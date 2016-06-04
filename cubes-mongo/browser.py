@@ -403,7 +403,7 @@ class MongoBrowser(AggregationBrowser):
                 group = phys.group
             elif function:
                 group_applicator = function["group_by"]
-                group = group_applicator(escape_level(agg.ref()))
+                group = group_applicator(escape_level(agg.measure.ref()))
             else:
                 raise ModelError("Neither function or mapping group specified "
                                  "for aggregate '%s' in cube '%s'"
